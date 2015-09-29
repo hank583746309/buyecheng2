@@ -55,6 +55,20 @@ public class AsyncTaskUtil {
 	
 	public static void postData(final Context context,String method,JSONObject params,final Callback callback,final boolean showDef){
 		if(params == null){ params = new JSONObject();}
+		
+		Object obj = null;
+		for(String key : params.keySet()){
+			obj = params.get(key);
+			if(obj instanceof String){
+				String value = (String) obj;
+				if(StringUtil.isContainChinese(value)){
+					value = UnicodeUtil.gbEncoding(value);
+					params.put(key, value);
+				}
+			}
+		}
+		
+		
 		RequestModel model = new RequestModel();
 		model.methodName = method;
 		model.params = params;
