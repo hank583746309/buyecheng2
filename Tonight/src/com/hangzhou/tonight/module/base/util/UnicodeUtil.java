@@ -17,7 +17,6 @@ public class UnicodeUtil {
 			}
 			unicodeBytes = unicodeBytes + "\\u" + hexB;
 		}
-		System.out.println("unicodeBytes is: " + unicodeBytes);
 		return unicodeBytes;
 	}
 	
