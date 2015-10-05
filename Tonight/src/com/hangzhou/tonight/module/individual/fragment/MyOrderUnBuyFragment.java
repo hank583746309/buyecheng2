@@ -3,11 +3,11 @@ package com.hangzhou.tonight.module.individual.fragment;
 import android.os.Bundle;
 
 /**
- * 未支付订单
+ * 未消费
  * @author hank
  *
  */
-public class MyOrderUnPayFragment extends MyOrderFragment {
+public class MyOrderUnBuyFragment extends MyOrderUnPayFragment {
 	
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {

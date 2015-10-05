@@ -3,16 +3,14 @@ package com.hangzhou.tonight.module.individual.fragment;
 import android.os.Bundle;
 
 /**
- * 未支付订单
+ * 待评价
  * @author hank
  *
  */
-public class MyOrderUnPayFragment extends MyOrderFragment {
-	
+public class MyOrderUnCommonFragment extends MyOrderUnPayFragment {
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
-		PAY_STATE = STATE_UNPAY;
+		PAY_STATE = STATE_UNCOMMON;
 		super.onActivityCreated(savedInstanceState);
 	}
-	
 }

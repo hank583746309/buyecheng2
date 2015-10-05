@@ -77,6 +77,7 @@ public class IndividualActivity extends CustomActionActivity {
 			}else if(v == vInfoContainer){
 				BaseSingeFragmentActivity.startActivity(getActivity(), IndividualInfomationFragment.class, new TbarViewModel(getResources().getString(R.string.individual)));
 			}else if(v == mMycommission){
+				
 				//TODO 如果未申请为 普通营销或者升级为销售经理等角色 
 				BaseSingeFragmentActivity.startActivity(getActivity(), ApplyExtensionFragment.class, new TbarViewModel("申请推广"));
 				//BaseSingeFragmentActivity.startActivity(getActivity(), MyCommissionFragment.class, new TbarViewModel(getResources().getString(R.string.individual_my_commission)));
